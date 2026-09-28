@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Kumar — AI/ML Engineer & Computer Vision Researcher</title>
+  <meta name="description" content="Prince Kumar is a B.Tech AI/ML student at BIST Bhopal specializing in Computer Vision, LLMs, and intelligent systems. Explore research-grade projects like MediSync and FasalSathi. Seeking AI/ML research internships." />
+  <meta name="keywords" content="Prince Kumar, AI ML Engineer, Computer Vision, LLM, Machine Learning Student, Deep Learning, PyTorch, TensorFlow, BIST Bhopal, AI Internship" />
+  <meta name="author" content="Prince Kumar" />
+  <meta property="og:title" content="Prince Kumar — AI/ML Engineer & Computer Vision Researcher" />
+  <meta property="og:description" content="B.Tech AI/ML student building intelligent systems with LLMs, Computer Vision, and cloud-native backends." />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────────────── -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Prince Kumar home">
+        <span class="logo-bracket">&lt;</span>PK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="Prince_Kumar_Resume.pdf" download class="btn btn-sm" id="nav-resume-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────── -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow" id="hero-eyebrow">
+          <span class="mono">&gt;_</span> AI / ML Engineer
+        </p>
+        <h1 id="hero-heading">Prince<br /><span class="gradient-text">Kumar</span></h1>
+        <p class="hero-tagline">
+          Building intelligent systems at the intersection of <em>Computer Vision</em>,
+          <em>Large Language Models</em>, and real-world impact — from handwritten
+          prescriptions to smart agriculture.
+        </p>
+        <p class="hero-research">
+          <span class="mono research-label">// Research Interests</span>
+          Computer Vision &amp; multimodal LLMs · applied AI for real-world social problems · bridging research and production.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View My Work</a>
+          <a href="https://github.com/princekumar9349" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="hero-github-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/princekumar-aiml" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="hero-linkedin-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="mono scroll-label">scroll to explore</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="avatar-ring">
+          <img src="photo_6183570042641912179_y.jpg" alt="Prince Kumar" class="avatar-img" />
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+        </div>
+        <div class="floating-tag tag-1 mono">PyTorch</div>
+        <div class="floating-tag tag-2 mono">LLMs</div>
+        <div class="floating-tag tag-3 mono">OpenCV</div>
+        <div class="floating-tag tag-4 mono">FastAPI</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────────── -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-label mono">01 / about</div>
+      <h2 id="about-heading" class="section-heading">Who I Am</h2>
+      <div class="about-grid about-grid-photo">
+        <div class="about-photo-col">
+          <div class="about-photo-wrap">
+            <img src="photo_6183570042641912179_y.jpg" alt="Prince Kumar" class="about-photo" />
+            <div class="about-photo-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a third-year B.Tech student specialising in <strong>Artificial Intelligence &amp; Machine Learning</strong>
+            at Bansal Institute of Science &amp; Technology, Bhopal. My work sits at the
+            intersection of <strong>Computer Vision</strong>, <strong>Large Language Models</strong>, and
+            cloud-native engineering — I don't just study these technologies, I build with them.
+          </p>
+          <p>
+            My flagship project <em>MediSync</em> integrates multimodal LLMs, OCR pipelines, and
+            real-time push notifications into a production-grade healthcare app. <em>FasalSathi</em>
+            demonstrates my ability to deploy CNN-based plant-disease detection systems in
+            resource-constrained agricultural settings.
+          </p>
+          <p>
+            I'm actively seeking a <strong>research-oriented AI/ML internship</strong> where I can
+            contribute to cutting-edge work in computer vision, generative AI, or applied ML —
+            while growing alongside world-class engineers and researchers.
+          </p>
+          <div class="about-quick-facts">
+            <div class="fact">
+              <span class="fact-label mono">Location</span>
+              <span>Bhopal, India</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label mono">Email</span>
+              <a href="mailto:prince960876@gmail.com">prince960876@gmail.com</a>
+            </div>
+            <div class="fact">
+              <span class="fact-label mono">CGPA</span>
+              <span>7.22 / 10.0</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label mono">Status</span>
+              <span class="status-badge">Open to Internships</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card reveal-card">
+            <span class="stat-number gradient-text">2+</span>
+            <span class="stat-desc">Production-grade AI Projects</span>
+          </div>
+          <div class="stat-card reveal-card">
+            <span class="stat-number gradient-text">5+</span>
+            <span class="stat-desc">Cloud &amp; AI Certifications</span>
+          </div>
+          <div class="stat-card reveal-card">
+            <span class="stat-number gradient-text">1st</span>
+            <span class="stat-desc">Prize — MISA Workshop 2025</span>
+          </div>
+          <div class="stat-card reveal-card">
+            <span class="stat-number gradient-text">∞</span>
+            <span class="stat-desc">Curiosity &amp; Drive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────────────── -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-label mono">02 / skills</div>
+      <h2 id="skills-heading" class="section-heading">Technical Arsenal</h2>
+      <p class="section-sub">A curated map of the tools I reach for when building intelligent systems.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon" aria-hidden="true">{ }</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Python</span>
+            <span class="tag tag-primary">C++</span>
+            <span class="tag tag-primary">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon" aria-hidden="true">[ML]</span>
+            <h3>ML / Deep Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-blue">PyTorch</span>
+            <span class="tag tag-blue">TensorFlow</span>
+            <span class="tag tag-blue">Scikit-learn</span>
+            <span class="tag tag-blue">NumPy</span>
+            <span class="tag tag-blue">Pandas</span>
+            <span class="tag tag-blue">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon" aria-hidden="true">[AI]</span>
+            <h3>AI &amp; GenAI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-purple">LLMs</span>
+            <span class="tag tag-purple">OCR</span>
+            <span class="tag tag-purple">Prompt Engineering</span>
+            <span class="tag tag-purple">Gemini Vision</span>
+            <span class="tag tag-purple">Groq / Llama-3</span>
+            <span class="tag tag-purple">Whisper</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon" aria-hidden="true">[CLD]</span>
+            <h3>Cloud Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-teal">Vertex AI</span>
+            <span class="tag tag-teal">GenAI Studio</span>
+            <span class="tag tag-teal">Google Cloud</span>
+            <span class="tag tag-teal">AWS (Certified)</span>
+            <span class="tag tag-teal">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon" aria-hidden="true">[DB]</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-amber">MySQL</span>
+            <span class="tag tag-amber">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon" aria-hidden="true">[DEV]</span>
+            <h3>Dev Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-rose">Git</span>
+            <span class="tag tag-rose">GitHub</span>
+            <span class="tag tag-rose">FastAPI</span>
+            <span class="tag tag-rose">Postman</span>
+            <span class="tag tag-rose">React</span>
+            <span class="tag tag-rose">React Native</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CURRENTLY EXPLORING ─────────────────────────────────────── -->
+  <section id="exploring" aria-labelledby="exploring-heading">
+    <div class="container">
+      <div class="section-label mono">02.5 / currently exploring</div>
+      <h2 id="exploring-heading" class="section-heading">Always Learning</h2>
+      <p class="section-sub">What I'm actively studying, experimenting with, and building towards right now.</p>
+
+      <div class="exploring-grid">
+
+        <div class="exploring-card reveal" id="exp-cv">
+          <div class="exploring-header">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span class="exploring-status mono">in progress</span>
+          </div>
+          <h3 class="exploring-title">Advanced Computer Vision</h3>
+          <p class="exploring-desc">Object detection (YOLO, DETR), instance segmentation, and real-time inference pipelines.</p>
+          <div class="exploring-tags">
+            <span class="etag">YOLO</span>
+            <span class="etag">Segmentation</span>
+            <span class="etag">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="exploring-card reveal" id="exp-llm">
+          <div class="exploring-header">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span class="exploring-status mono">in progress</span>
+          </div>
+          <h3 class="exploring-title">Multimodal LLMs &amp; RAG</h3>
+          <p class="exploring-desc">Retrieval-Augmented Generation, vision-language models, and building context-aware AI pipelines.</p>
+          <div class="exploring-tags">
+            <span class="etag">RAG</span>
+            <span class="etag">LangChain</span>
+            <span class="etag">VLMs</span>
+          </div>
+        </div>
+
+        <div class="exploring-card reveal" id="exp-mlops">
+          <div class="exploring-header">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span class="exploring-status mono">in progress</span>
+          </div>
+          <h3 class="exploring-title">MLOps &amp; Model Deployment</h3>
+          <p class="exploring-desc">Containerising models with Docker, CI/CD for ML pipelines, and cloud-native model serving.</p>
+          <div class="exploring-tags">
+            <span class="etag">Docker</span>
+            <span class="etag">CI/CD</span>
+            <span class="etag">Cloud Run</span>
+          </div>
+        </div>
+
+        <div class="exploring-card reveal" id="exp-prompt">
+          <div class="exploring-header">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span class="exploring-status mono">in progress</span>
+          </div>
+          <h3 class="exploring-title">Applied Prompt Engineering</h3>
+          <p class="exploring-desc">Structured prompting, chain-of-thought, prompt chaining for production LLM applications.</p>
+          <div class="exploring-tags">
+            <span class="etag">CoT</span>
+            <span class="etag">Agents</span>
+            <span class="etag">Evals</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ─────────────────────────────────────────────────────── -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-label mono">03 / projects</div>
+      <h2 id="projects-heading" class="section-heading">Featured Projects</h2>
+      <p class="section-sub">Not just features lists — here's what I built, why it was hard, and what it achieved.</p>
+
+      <!-- MediSync -->
+      <article class="project-card reveal" id="project-medisync" aria-labelledby="medisync-title">
+        <div class="project-header">
+          <div class="project-number mono">01</div>
+          <div class="project-meta">
+            <div class="project-badges">
+              <span class="project-badge badge-ai">AI / LLM</span>
+              <span class="project-badge badge-cv">Computer Vision</span>
+              <span class="project-badge badge-full">Full-Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-content">
+            <h3 id="medisync-title" class="project-title">MediSync</h3>
+            <p class="project-subtitle">AI-Powered Medication Adherence Platform</p>
+
+            <div class="case-study">
+              <div class="cs-block">
+                <span class="cs-label mono">// The Problem</span>
+                <p>Medication non-adherence causes over 125,000 deaths annually in the US alone. For elderly and rural patients in India, the challenge is compounded by handwritten prescriptions, language barriers, and no reliable reminder infrastructure.</p>
+              </div>
+              <div class="cs-block">
+                <span class="cs-label mono">// What I Built</span>
+                <p>A full-stack healthcare platform comprising a React Native patient app and doctor app, backed by a FastAPI server. The centrepiece is an AI pipeline that takes a photo of a handwritten prescription and — using <strong>Google Gemini Vision + OCR</strong> — extracts drug names, dosages, and schedules into a structured JSON medication plan. This plan drives an intelligent reminder engine that sends push notifications, AI voice calls, and caregiver escalation alerts.</p>
+              </div>
+              <div class="cs-block">
+                <span class="cs-label mono">// My Contribution</span>
+                <p>I designed and built the entire system — multimodal LLM prescription parser, FastAPI backend with JWT auth &amp; MongoDB, APScheduler-based reminder engine, Groq Llama-3 multilingual chat, Whisper voice assistant, and the mobile UI. Integrated Firebase for real-time notifications and Google Cloud for deployment.</p>
+              </div>
+              <div class="cs-block cs-outcome">
+                <span class="cs-label mono">// Outcome &amp; Impact</span>
+                <p>Achieved accurate medication schedule extraction from handwritten prescriptions across three languages. Built the full adherence analytics dashboard used by doctors to monitor patient compliance. Platform supports patient-doctor secure messaging and voice-driven queries for elderly users with low digital literacy.</p>
+              </div>
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-tag">React Native (Expo)</span>
+              <span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Google Gemini Vision</span>
+              <span class="stack-tag">Groq / Llama-3</span>
+              <span class="stack-tag">Whisper</span>
+              <span class="stack-tag">OpenCV</span>
+              <span class="stack-tag">Firebase</span>
+              <span class="stack-tag">Google Cloud</span>
+              <span class="stack-tag">JWT Auth</span>
+              <span class="stack-tag">APScheduler</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/princekumar9349/medisync.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="medisync-github-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View Code
+              </a>
+              <span class="demo-note mono">// Live demo not yet deployed — see GitHub for screenshots &amp; docs</span>
+            </div>
+          </div>
+
+          <div class="project-visual" aria-hidden="true">
+            <div class="terminal-mockup">
+              <div class="terminal-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="terminal-title mono">medisync_pipeline.py</span>
+              </div>
+              <div class="terminal-body mono">
+                <p><span class="t-comment"># Prescription → Medication Schedule</span></p>
+                <p><span class="t-keyword">async def</span> <span class="t-fn">parse_prescription</span>(image):</p>
+                <p>  <span class="t-var">response</span> = <span class="t-keyword">await</span> gemini.generate(</p>
+                <p>    model=<span class="t-str">"gemini-pro-vision"</span>,</p>
+                <p>    prompt=MEDICAL_EXTRACT_PROMPT,</p>
+                <p>    image=image</p>
+                <p>  )</p>
+                <p>  <span class="t-var">schedule</span> = <span class="t-fn">structure_json</span>(response)</p>
+                <p>  <span class="t-keyword">await</span> <span class="t-fn">schedule_reminders</span>(schedule)</p>
+                <p>  <span class="t-keyword">return</span> schedule</p>
+                <p>&nbsp;</p>
+                <p><span class="t-comment"># OUTPUT ─────────────────────</span></p>
+                <p><span class="t-str">"medications"</span>: [</p>
+                <p>  &#123;<span class="t-str">"name"</span>: <span class="t-str">"Metformin 500mg"</span>,</p>
+                <p>   <span class="t-str">"schedule"</span>: <span class="t-str">"8am, 8pm"</span>,</p>
+                <p>   <span class="t-str">"duration_days"</span>: <span class="t-num">30</span>&#125;</p>
+                <p>]</p>
+                <p><span class="t-comment"># ✓ Reminders scheduled ─ 60 alerts</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FasalSathi -->
+      <article class="project-card project-card-alt reveal" id="project-fasalsathi" aria-labelledby="fasalsathi-title">
+        <div class="project-header">
+          <div class="project-number mono">02</div>
+          <div class="project-meta">
+            <div class="project-badges">
+              <span class="project-badge badge-cv">Computer Vision</span>
+              <span class="project-badge badge-ai">AI / ML</span>
+              <span class="project-badge badge-team">Team Project</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-visual" aria-hidden="true">
+            <div class="terminal-mockup">
+              <div class="terminal-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="terminal-title mono">disease_detector.py</span>
+              </div>
+              <div class="terminal-body mono">
+                <p><span class="t-comment"># Plant Disease Detection — CNN</span></p>
+                <p><span class="t-keyword">class</span> <span class="t-fn">CropDiseaseDetector</span>:</p>
+                <p>  <span class="t-keyword">def</span> <span class="t-fn">__init__</span>(self):</p>
+                <p>    self.model = <span class="t-fn">load_model</span>(</p>
+                <p>      <span class="t-str">"efficientnet_plant_v2.h5"</span></p>
+                <p>    )</p>
+                <p>    self.classes = <span class="t-fn">get_disease_labels</span>()</p>
+                <p>&nbsp;</p>
+                <p>  <span class="t-keyword">def</span> <span class="t-fn">predict</span>(self, leaf_img):</p>
+                <p>    <span class="t-var">img</span> = <span class="t-fn">preprocess</span>(leaf_img)</p>
+                <p>    <span class="t-var">pred</span> = self.model.<span class="t-fn">predict</span>(img)</p>
+                <p>    <span class="t-keyword">return</span> &#123;</p>
+                <p>      <span class="t-str">"disease"</span>: self.classes[<span class="t-fn">argmax</span>(pred)],</p>
+                <p>      <span class="t-str">"confidence"</span>: <span class="t-num">0.94</span>,</p>
+                <p>      <span class="t-str">"remedy"</span>: <span class="t-fn">get_remedy</span>(pred)</p>
+                <p>    &#125;</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3 id="fasalsathi-title" class="project-title">FasalSathi</h3>
+            <p class="project-subtitle">AI-Powered Smart Agriculture Platform</p>
+
+            <div class="case-study">
+              <div class="cs-block">
+                <span class="cs-label mono">// The Problem</span>
+                <p>Indian smallholder farmers lose 30–40% of crops annually to undetected plant diseases and poor decision-making around crop selection. Existing tools require expensive hardware or agronomist visits that are out of reach.</p>
+              </div>
+              <div class="cs-block">
+                <span class="cs-label mono">// What We Built</span>
+                <p>A smart agriculture platform combining <strong>CNN-based plant disease detection</strong> (photo → diagnosis + remedy), AI-driven crop recommendation using soil and weather parameters, and real-time weather integration for farming guidance.</p>
+              </div>
+              <div class="cs-block">
+                <span class="cs-label mono">// My Specific Contribution</span>
+                <p>I owned all AI/ML modules: trained and optimised the <strong>computer vision disease detection model</strong> using TensorFlow/OpenCV, built the crop recommendation engine, designed the FastAPI backend APIs that serve predictions, and integrated real-time weather data pipelines. The React frontend consumed my APIs directly.</p>
+              </div>
+              <div class="cs-block cs-outcome">
+                <span class="cs-label mono">// Outcome &amp; Impact</span>
+                <p>Delivered a functioning platform capable of identifying 15+ common crop diseases from smartphone photos. This project earned us <strong>Runner-Up at the Internal Smart India Hackathon 2025</strong>, validating both the technical implementation and its real-world applicability for Indian agriculture.</p>
+              </div>
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">TensorFlow</span>
+              <span class="stack-tag">OpenCV</span>
+              <span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Google Cloud</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Pawankus6261/agritch.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="fasalsathi-github-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View Code
+              </a>
+              <span class="demo-note mono">// Team repository — see README for setup instructions</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────────────────────────────────── -->
+  <section id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-label mono">04 / experience</div>
+      <h2 id="experience-heading" class="section-heading">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal" id="exp-google-cloud">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Google Cloud Generative AI Virtual Internship</h3>
+                <p class="timeline-org">SmartBridge × Google Cloud</p>
+              </div>
+              <span class="timeline-period mono">2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built and deployed multiple <strong>Generative AI applications</strong> on Vertex AI, including prompt-chaining pipelines and RAG-based assistants</li>
+              <li>Completed all assigned <strong>Google Cloud Skill Boost labs</strong> covering Vertex AI, BigQuery ML, GenAI Studio, and text/image generation APIs</li>
+              <li>Developed hands-on expertise in <strong>prompt engineering</strong> techniques — zero-shot, few-shot, chain-of-thought — and learned to evaluate LLM outputs systematically</li>
+              <li>Gained practical experience with <strong>cloud deployment</strong> of AI workloads, including model endpoints, IAM configuration, and cost-optimised inference</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag-teal">Vertex AI</span>
+              <span class="tag tag-teal">GenAI Studio</span>
+              <span class="tag tag-teal">Prompt Engineering</span>
+              <span class="tag tag-teal">BigQuery ML</span>
+              <span class="tag tag-teal">Cloud Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS & CERTS ─────────────────────────────────────────── -->
+  <section id="achievements" aria-labelledby="achievements-heading">
+    <div class="container">
+      <div class="section-label mono">05 / achievements &amp; certs</div>
+      <h2 id="achievements-heading" class="section-heading">Recognition &amp; Credentials</h2>
+
+      <div class="ach-grid">
+
+        <!-- Achievements -->
+        <div class="ach-col">
+          <h3 class="ach-col-title">Achievements</h3>
+          <div class="ach-list">
+
+            <div class="ach-item reveal" id="ach-misa">
+              <div class="ach-rank first">1st</div>
+              <div class="ach-detail">
+                <p class="ach-title">MISA Workshop 2025</p>
+                <p class="ach-sub">Microsoft Azure Developer Day, Bhopal</p>
+                <p class="ach-desc">Competed and won first prize among student developers from across Bhopal's tech institutions.</p>
+              </div>
+            </div>
+
+            <div class="ach-item reveal" id="ach-sih">
+              <div class="ach-rank runner">2nd</div>
+              <div class="ach-detail">
+                <p class="ach-title">Internal Smart India Hackathon 2025</p>
+                <p class="ach-sub">BIST Bhopal — Runner-Up</p>
+                <p class="ach-desc">Built FasalSathi — our AI agriculture platform earned runner-up recognition for technical depth and social impact.</p>
+              </div>
+            </div>
+
+            <div class="ach-item reveal" id="ach-cloud-badges">
+              <div class="ach-rank badge-rank">GCP</div>
+              <div class="ach-detail">
+                <p class="ach-title">Google Cloud Skill Boost Badges</p>
+                <p class="ach-sub">Multiple Completion Badges</p>
+                <p class="ach-desc">Earned multiple verified badges covering Generative AI, Vertex AI, BigQuery, and GenAI Studio.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="ach-col">
+          <h3 class="ach-col-title">Certifications</h3>
+          <div class="cert-list">
+
+            <a href="https://certificate.hack2skill.com/user/genai10/2025H2S04GENAI-A1000444" target="_blank" rel="noopener noreferrer" class="cert-item cert-link reveal" id="cert-genai-academy" title="View Certificate">
+              <div class="cert-icon">GenAI</div>
+              <div class="cert-detail">
+                <p class="cert-name">Gen AI Academy Completion Certificate</p>
+                <p class="cert-issuer mono">Hack2Skill</p>
+              </div>
+              <span class="cert-verify">↗</span>
+            </a>
+
+            <!-- PASTE your Google Cloud Skill Boost profile URL in the href below -->
+            <!-- Example: https://www.cloudskillsboost.google/public_profiles/YOUR_ID -->
+            <a href="https://www.skills.google/public_profiles/bfdb1045-eb97-4d64-95b3-b9bffa66e22c" target="_blank" rel="noopener noreferrer" class="cert-item cert-link reveal" id="cert-gcp-badges" title="View Google Cloud Profile">
+              <div class="cert-icon">GCP</div>
+              <div class="cert-detail">
+                <p class="cert-name">Google Cloud Skill Boost</p>
+                <p class="cert-issuer mono">Vertex AI · BigQuery · GenAI Studio</p>
+              </div>
+              <span class="cert-verify">↗</span>
+            </a>
+
+            <a href="https://www.credly.com/go/SASkYo44" target="_blank" rel="noopener noreferrer" class="cert-item cert-link reveal" id="cert-aws" title="View AWS Badge">
+              <div class="cert-icon">AWS</div>
+              <div class="cert-detail">
+                <p class="cert-name">AWS Academy Cloud Foundations</p>
+                <p class="cert-issuer mono">Amazon Web Services</p>
+              </div>
+              <span class="cert-verify">↗</span>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="cert-item cert-link reveal" id="cert-mysql" title="View HackerRank Certificate">
+              <div class="cert-icon">SQL</div>
+              <div class="cert-detail">
+                <p class="cert-name">MySQL (Basic)</p>
+                <p class="cert-issuer mono">HackerRank</p>
+              </div>
+              <span class="cert-verify">↗</span>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="cert-item cert-link reveal" id="cert-python" title="View Cisco Certificate">
+              <div class="cert-icon">PY</div>
+              <div class="cert-detail">
+                <p class="cert-name">Python</p>
+                <p class="cert-issuer mono">Cisco Networking Academy</p>
+              </div>
+              <span class="cert-verify">↗</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ─────────────────────────────────────────────────────── -->
+  <section id="education" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-label mono">06 / education</div>
+      <h2 id="education-heading" class="section-heading">Academic Background</h2>
+
+      <div class="edu-timeline">
+
+        <div class="edu-item reveal" id="edu-btech">
+          <div class="edu-year-pill">2024 – 2028</div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div>
+                <h3 class="edu-degree">B.Tech — Artificial Intelligence &amp; Machine Learning</h3>
+                <p class="edu-inst">Bansal Institute of Science &amp; Technology, Bhopal</p>
+              </div>
+              <div class="edu-score">
+                <span class="score-number gradient-text">7.22</span>
+                <span class="score-label mono">/ 10 CGPA</span>
+                <span class="score-note">(through Sem V)</span>
+              </div>
+            </div>
+            <p class="edu-note">Core coursework in machine learning, data structures, computer networks, and algorithms. Active participant in hackathons, workshops, and cloud internships alongside academic studies.</p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal" id="edu-xii">
+          <div class="edu-year-pill">2024</div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div>
+                <h3 class="edu-degree">Class XII (Science)</h3>
+                <p class="edu-inst">Jharkhand Academic Council</p>
+              </div>
+              <div class="edu-score">
+                <span class="score-number gradient-text">77%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal" id="edu-x">
+          <div class="edu-year-pill">2022</div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div>
+                <h3 class="edu-degree">Class X</h3>
+                <p class="edu-inst">Jharkhand Academic Council</p>
+              </div>
+              <div class="edu-score">
+                <span class="score-number gradient-text">83.4%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────────────────────── -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-label mono">07 / contact</div>
+      <h2 id="contact-heading" class="section-heading">Let's Build Something</h2>
+      <p class="contact-intro">
+        I'm actively looking for a <strong>research-oriented AI/ML internship</strong> starting
+        early 2025. If you're working on something interesting in computer vision, LLMs,
+        or applied ML — let's talk.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-methods">
+          <a href="mailto:prince960876@gmail.com" class="contact-card reveal" id="contact-email-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label mono">Email</p>
+              <p class="contact-value">prince960876@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+919608767556" class="contact-card reveal" id="contact-phone-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label mono">Phone</p>
+              <p class="contact-value">+91 96087 67556</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/princekumar9349" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="contact-github-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label mono">GitHub</p>
+              <p class="contact-value">princekumar9349</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/princekumar-aiml" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="contact-linkedin-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label mono">LinkedIn</p>
+              <p class="contact-value">princekumar-aiml</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-cta-panel reveal">
+          <div class="cta-inner">
+            <p class="cta-heading gradient-text">Ready to collaborate?</p>
+            <p class="cta-body">Download my resume for a full overview of my experience, or reach out directly — I respond within 24 hours.</p>
+            <a href="Prince_Kumar_Resume.pdf" download class="btn btn-primary btn-lg" id="contact-resume-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Resume
+            </a>
+            <a href="mailto:prince960876@gmail.com" class="btn btn-outline btn-lg" id="contact-email-btn">
+              Send Me a Message
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo mono">&lt;Prince Kumar /&gt;</p>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-links">
+          <a href="https://github.com/princekumar9349" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/princekumar-aiml" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:prince960876@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer-bottom mono">Built by Prince Kumar &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
