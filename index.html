@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
 
+  <link rel="preload" as="image" href="avatar.webp" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,7 +26,8 @@
   <nav id="navbar" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="Prince Kumar home">
-        <span class="logo-bracket">&lt;</span>PK<span class="logo-bracket">/&gt;</span>
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-name">Prince Kumar</span>
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -93,7 +95,7 @@
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="avatar-ring">
-          <img src="avatar_transparent.png?v=2" alt="Prince Kumar" class="avatar-img" />
+          <img src="avatar.webp" alt="Prince Kumar" class="avatar-img" width="640" height="853" fetchpriority="high" decoding="async" />
           <div class="ring ring-1"></div>
           <div class="ring ring-2"></div>
           <div class="ring ring-3"></div>
@@ -114,7 +116,7 @@
       <div class="about-grid about-grid-photo">
         <div class="about-photo-col">
           <div class="about-photo-wrap">
-            <img src="avatar_transparent.png?v=2" alt="Prince Kumar" class="about-photo" />
+            <img src="avatar.webp" alt="Prince Kumar" class="about-photo" width="640" height="853" loading="lazy" decoding="async" />
             <div class="about-photo-glow" aria-hidden="true"></div>
           </div>
         </div>
@@ -1879,8 +1881,8 @@
 
         <div class="contact-cta-panel reveal">
           <div class="cta-inner">
-            <p class="cta-heading gradient-text">Ready to collaborate?</p>
-            <p class="cta-body">Download my resume for a full overview of my experience, or reach out directly — I respond within 24 hours.</p>
+            <p class="cta-heading gradient-text">Let’s build something meaningful.</p>
+            <p class="cta-body">I’m open to AI/ML research and engineering opportunities. View my resume or send me a message — I’d be glad to connect.</p>
             <a href="Prince_Kumar_Resume.pdf" download class="btn btn-primary btn-lg" id="contact-resume-btn">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
               Download Resume
